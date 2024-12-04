@@ -1,10 +1,10 @@
-# *LyricCovers*: A comprehensive large-scale dataset of cover songs with lyrics
+# LyricCovers 2.0: An enhanced dataset for cover song analysis
 
 This repository contains the code for the Paper "*LyricCovers*: A comprehensive large-scale dataset of cover songs with lyrics".
 
 ## Abstract
 
-This research offers a detailed examination of a novel dataset that collates original musical compositions alongside their derivative cover versions. Unique in its inclusion of both audio files as well as annotated lyrical content, the dataset enlists more than 70,000 tracks, encompassing more than 18,000 cover song groupings. It stands as the most diverse compendium of cover songs currently available for study. The characteristics of the \textit{LyricsCovers} dataset are thoroughly analyzed through its metadata, and empirical evaluations in the subsequent experimental lyrics analysis section suggest that lyrical analysis is a fundamental component in identifying and studying cover songs.
+This research offers a detailed examination of a novel dataset that collates original musical compositions alongside their derivative cover versions. Unique in its inclusion of both links to YouTube as well as and lyrical content, the dataset enlists more than 78,000 tracks, encompassing more than 24,000 cover song groupings. It stands as the most diverse compendium of cover songs currently available for study. The characteristics of the LyricCovers dataset are thoroughly analyzed through its metadata, and empirical evaluations in the subsequent experimental lyrics analysis section suggest that lyrical analysis is a fundamental component in the identification and study of cover songs. This work presents a baseline approach to cover song detection, with an emphasis on lyrical content processing. It describes the extraction of lyrics from the audio files and the application of the Jina Embeddings 2 Model, fine-tuned with a hard triplet-loss objective, which successfully exploits lyric similarity to accurately identify cover songs.
 
 
 
