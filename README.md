@@ -44,10 +44,15 @@ Open the [Interactive plot](assets/genres.html)
 
 ### Current dataset
 
+The dataset are part of this repository and can be found in the `data` folder. 
+
+The main dataset is a pandas DataFrame with the following columns:
+
+
 ```
 <class 'pandas.core.frame.DataFrame'>
 Index: 78862 entries, 69 to 3936785
-Data columns (total 30 columns):
+Data columns (total 28 columns):
  #   Column                             Non-Null Count  Dtype         
 ---  ------                             --------------  -----         
  0   id                                 78862 non-null  int64         
@@ -68,18 +73,31 @@ Data columns (total 30 columns):
  15  is_cover                           78862 non-null  bool          
  16  vevo_url                           9 non-null      object        
  17  vevo_type                          9 non-null      object        
- 18  youtube_download_status            78862 non-null  object        
- 19  youtube_download_gs_path           78862 non-null  object        
- 20  source_separation_status_htdemucs  78862 non-null  object        
- 21  vocals_htdemucs                    78830 non-null  object        
- 22  drums_htdemucs                     0 non-null      object        
- 23  bass_htdemucs                      0 non-null      object        
- 24  other_htdemucs                     0 non-null      object        
- 25  tags                               78861 non-null  object        
- 26  release_date                       59457 non-null  datetime64[ns]
- 27  release_year                       59457 non-null  datetime64[ns]
- 28  transcription_status               17001 non-null  object        
- 29  transcription                      17001 non-null  object        
-dtypes: bool(1), datetime64[ns](2), int64(3), object(24)
-memory usage: 18.1+ MB
+ 18  youtube_download_status            78862 non-null  object          
+ 19  tags                               78861 non-null  object        
+ 20  release_date                       59457 non-null  datetime64[ns]
+ 21  release_year                       59457 non-null  datetime64[ns]
+dtypes: bool(1), datetime64[ns](2), int64(3), object(22)
+memory usage: 16.9+ MB
+```
+
+The train, validation and test datasets are stored in the `data` folder as well.
+
+## Citation
+
+```bibtex
+@article{Balluff2024LyricCovers2.0,
+    title={LYRICCOVERS 2.0: AN ENHANCED DATASET FOR COVER SONG ANALYSIS},
+    author={Maximilian Balluff, Maximilian Auch, Peter Mandl, Andreas Wolff},
+    note={Submitted to the Journal of IADIS International Journal on WWW/Internet},
+    year={2024}
+}
+@inproceedings{Balluff2024LyricCovers,
+    title={LyricCovers: A comprehensive large-scale dataset of cover songs with lyrics},
+    author={Maximilian Balluff, Peter Mandl, Andreas Wolff},
+    booktitle = {Proceedings of the International Conferences on Applied Computing \& WWW/Internet},
+    year={2024},
+    editor = {Miranda, Paula and Isaías, Pedro},
+    month = {October}
+}
 ```

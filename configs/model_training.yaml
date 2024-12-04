@@ -1,0 +1,40 @@
+settings:
+  docker:
+    parent_image: pytorch/pytorch:2.3.1-cuda12.1-cudnn8-devel
+    environment:
+      ZENML_LOGGING_COLORS_DISABLED: true
+    requirements:
+      - zenml==0.68.1
+      - transformers==4.46.3
+      - lightning==2.3
+      - pytorch-metric-learning==2.4.1
+      - tensorboard==2.16.2
+      - pyarrow==15.0.1
+      - evaluate==0.4.3
+
+
+parameters:
+  dataset_id: b7e74309-d521-4f29-b0ba-6246fbf59a29
+  transcription_model: openai/whisper-tiny
+
+steps:
+  train:
+    parameters:
+      base_model: jinaai/jina-embeddings-v2-small-en
+      max_epochs: 25
+      batch_size: 64
+      patience_early_stopping: 4
+      lr_reduce_patience: 2
+      min_delta_early_stopping: 0.001
+      accumulate_grad_batches: 2
+      learning_rate: 0.0001
+      gradient_clip_val: 4.0
+      trainable_layers:
+        - encoder.layer.3
+        - pooler
+      sampler_m: 8
+      max_length: 1024
+  evaluate:
+    parameters:
+      batch_size: 64
+

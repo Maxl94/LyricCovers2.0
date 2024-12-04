@@ -1,0 +1,33 @@
+settings:
+  docker:
+    parent_image: eu.gcr.io/<google-cloud-project-id>/pytorch:2.1.2-cuda11.8-cudnn8-runtime-htdemucs
+    environment:
+      ZENML_LOGGING_COLORS_DISABLED: true
+      PROJECT_ID: <google-cloud-project-id>
+      MKL_SERVICE_FORCE_INTEL: 1
+    requirements:
+      - zenml==0.68.1
+      - pyarrow==15.0.0
+      - git+https://github.com/adefossez/demucs.git
+      - soundfile==0.12.1
+      - transformers==4.37.2
+      - torchaudio==2.1.2
+      - google-cloud-pubsub==2.19.6
+      - pyarrow==15.0.0
+      - pandas
+      - google-auth
+      - google-cloud-firestore==2.19.0
+      - seaborn
+      - levenshtein
+      - evaluate
+      - nltk  
+      - rouge_score
+      - jiwer
+
+
+parameters:
+  dataset_file_id: 280a0d13-3386-4b2b-bb38-3fff69b06031
+  source: genius
+
+  
+
