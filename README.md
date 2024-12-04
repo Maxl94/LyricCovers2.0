@@ -46,42 +46,40 @@ Open the [Interactive plot](assets/genres.html)
 
 ```
 <class 'pandas.core.frame.DataFrame'>
-Index: 77751 entries, 69 to 3936833
-Data columns (total 32 columns):
- #   Column                              Non-Null Count  Dtype 
----  ------                              --------------  ----- 
- 0   id                                  77751 non-null  int64 
- 1   url                                 77751 non-null  object
- 2   title                               77751 non-null  object
- 3   artist                              77751 non-null  object
- 4   artist_id                           77751 non-null  int64 
- 5   language                            77507 non-null  object
- 6   lyrics                              77751 non-null  object
- 7   lyrics_state                        77751 non-null  object
- 8   youtube_url                         77751 non-null  object
- 9   youtube_type                        77751 non-null  object
- 10  spotify_url                         5378 non-null   object
- 11  spotify_type                        5378 non-null   object
- 12  soundcloud_url                      5596 non-null   object
- 13  soundcloud_type                     5596 non-null   object
- 14  original_id                         77751 non-null  int64 
- 15  is_cover                            77751 non-null  bool  
- 16  vevo_url                            3 non-null      object
- 17  vevo_type                           3 non-null      object
- 18  soundfile_available                 77751 non-null  bool  
- 19  tags                                77750 non-null  object
- 20  youtube_download_status             70527 non-null  object
- 21  youtube_download_gs_path            69875 non-null  object
- 22  source_separation_status_demucs     69875 non-null  object
- 23  vocals_demucs                       69875 non-null  object
- 24  drums_demucs                        69875 non-null  object
- 25  bass_demucs                         69875 non-null  object
- 26  other_demucs                        69875 non-null  object
- 27  transcription_status_demucs_w_tiny  69875 non-null  object
- 28  transcription_demucs_w_tiny         69875 non-null  object
- 29  source_separation_status_spleeter   69875 non-null  object
- 30  vocals_spleeter                     69875 non-null  object
- 31  accompaniment_spleeter              69875 non-null  object
-dtypes: bool(2), int64(3), object(27)
-memory usage: 18.5+ MB
+Index: 78862 entries, 69 to 3936785
+Data columns (total 30 columns):
+ #   Column                             Non-Null Count  Dtype         
+---  ------                             --------------  -----         
+ 0   id                                 78862 non-null  int64         
+ 1   url                                78862 non-null  object        
+ 2   title                              78862 non-null  object        
+ 3   artist                             78862 non-null  object        
+ 4   artist_id                          78862 non-null  int64         
+ 5   language                           78003 non-null  object        
+ 6   lyrics                             78829 non-null  object        
+ 7   lyrics_state                       78862 non-null  object        
+ 8   youtube_url                        78862 non-null  object        
+ 9   youtube_type                       78862 non-null  object        
+ 10  spotify_url                        7723 non-null   object        
+ 11  spotify_type                       7723 non-null   object        
+ 12  soundcloud_url                     7258 non-null   object        
+ 13  soundcloud_type                    7258 non-null   object        
+ 14  original_id                        78862 non-null  int64         
+ 15  is_cover                           78862 non-null  bool          
+ 16  vevo_url                           9 non-null      object        
+ 17  vevo_type                          9 non-null      object        
+ 18  youtube_download_status            78862 non-null  object        
+ 19  youtube_download_gs_path           78862 non-null  object        
+ 20  source_separation_status_htdemucs  78862 non-null  object        
+ 21  vocals_htdemucs                    78830 non-null  object        
+ 22  drums_htdemucs                     0 non-null      object        
+ 23  bass_htdemucs                      0 non-null      object        
+ 24  other_htdemucs                     0 non-null      object        
+ 25  tags                               78861 non-null  object        
+ 26  release_date                       59457 non-null  datetime64[ns]
+ 27  release_year                       59457 non-null  datetime64[ns]
+ 28  transcription_status               17001 non-null  object        
+ 29  transcription                      17001 non-null  object        
+dtypes: bool(1), datetime64[ns](2), int64(3), object(24)
+memory usage: 18.1+ MB
 ```
