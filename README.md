@@ -83,6 +83,27 @@ memory usage: 16.9+ MB
 
 The train, validation and test datasets are stored in the `data` folder as well.
 
+## Usage & Evaluation Guidelines
+
+### Dataset Usage
+The dataset is split into training, validation, and test sets, provided in the `data` folder. We recommend using the training and validation sets for model development and hyperparameter tuning. There are no strict constraints on how to utilize these portions of the dataset - researchers and developers are free to experiment with different approaches based on their specific requirements.
+
+### Evaluation Protocol
+For evaluating cover song detection systems, we strongly recommend following a practical evaluation protocol:
+
+1. Split the test dataset into two components:
+   - A database containing all original songs
+   - A query set containing the cover versions
+
+2. Implementation flow:
+   - Calculate cross-similarity between each query (cover) and all songs in the database
+   - Rank the database songs based on their similarity scores
+   - Evaluate the system using standard retrieval metrics (e.g., Mean Reciprocal Rank, Mean Average Precision)
+
+This evaluation approach mirrors real-world scenarios where systems need to identify whether a given song is a cover version by comparing it against a database of original recordings. It provides a more practical and meaningful assessment of a model's performance in cover song detection tasks.
+
+We reco
+
 ## Citation
 
 ```bibtex
