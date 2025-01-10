@@ -107,11 +107,15 @@ We reco
 ## Citation
 
 ```bibtex
-@article{Balluff2024LyricCovers2.0,
-    title={LYRICCOVERS 2.0: AN ENHANCED DATASET FOR COVER SONG ANALYSIS},
-    author={Maximilian Balluff, Maximilian Auch, Peter Mandl, Andreas Wolff},
-    note={Submitted to the Journal of IADIS International Journal on WWW/Internet},
-    year={2024}
+@article{balluff2022lyriccovers,
+    title={LyricCovers 2.0: An Enhanced Dataset for Cover Song Analysis},
+    author={Balluff, Maximilian and Auch, Maximilian and Mandl, Peter and Wolff, Christian},
+    journal={IADIS International Journal on WWW/Internet},
+    volume={22},
+    number={2},
+    pages={75--92},
+    year={2022},
+    issn={1645-7641}
 }
 @inproceedings{Balluff2024LyricCovers,
     title={LyricCovers: A comprehensive large-scale dataset of cover songs with lyrics},
